@@ -251,7 +251,7 @@
                       </span>
                       HW-2-David.zip</a
                     >
-                    <hr />
+                    <hr class="mb-0" />
                   </div>
                   <div class="card-body">
                     <div class="d-flex justify-content-start">
@@ -308,66 +308,142 @@
                     </ul>
                   </div>
                 </div>
-                <div
-                  class="d-flex pt-3 justify-content-between align-items-center"
-                >
-                  <div>
-                    <span class="material-symbols-outlined">
-                      chevron_left
-                    </span>
-                    <span class="material-symbols-outlined">
-                      chevron_right
-                    </span>
-                  </div>
-                  <div>
-                    <button type="button" class="btn btn-outline-success px-5">
-                      Mark as read
-                    </button>
-                    <button
-                      class="btn btn-success px-5"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseExample"
-                      aria-expanded="false"
-                      aria-controls="collapseExample"
-                    >
-                      Reply
-                    </button>
-                  </div>
+                <div class="position-relative">
                   <div
-                    class="modal fade"
-                    id="exampleModal"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
+                    class="collapse position-absolute start-0 end-0 bottom-0"
+                    id="collapseExample"
                   >
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">
-                            Modal title
-                          </h5>
+                    <div class="card rounded-0">
+                      <div class="card-header d-flex align-items-center">
+                        <div class="dropdown">
                           <button
+                            class="btn btn-light border-0 me-4 shadow-none d-inline-flex"
                             type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                          ></button>
-                        </div>
-                        <div class="modal-body">...</div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
                           >
-                            Close
+                            Body Text<span
+                              class="material-symbols-outlined ms-2"
+                              >arrow_drop_down</span
+                            >
                           </button>
-                          <button type="button" class="btn btn-primary">
-                            Save changes
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Another action</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Something else here</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="d-flex">
+                          <a
+                            href="#"
+                            class="btn btn-light border-0 btn-sm me-4 shadow-none"
+                            ><span class="material-symbols-outlined"
+                              >format_bold</span
+                            ></a
+                          >
+                          <a
+                            href="#"
+                            class="btn btn-light border-0 btn-sm me-4 shadow-none"
+                            ><span class="material-symbols-outlined"
+                              >format_list_bulleted</span
+                            ></a
+                          >
+                          <a
+                            href="#"
+                            class="btn btn-light border-0 btn-sm me-4 shadow-none"
+                            ><span class="material-symbols-outlined"
+                              >format_list_numbered</span
+                            ></a
+                          >
+                          <a
+                            href="#"
+                            class="btn btn-light border-0 btn-sm me-4 shadow-none"
+                            ><span class="material-symbols-outlined"
+                              >image</span
+                            ></a
+                          >
+                          <a
+                            href="#"
+                            class="btn btn-light border-0 btn-sm me-4 shadow-none"
+                            ><span class="material-symbols-outlined"
+                              >link</span
+                            ></a
+                          >
+                          <a
+                            href="#"
+                            class="btn btn-light border-0 btn-sm me-4 shadow-none"
+                            ><span class="material-symbols-outlined"
+                              >code</span
+                            ></a
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="card-body position-relative p-0"
+                        style="height: 290px"
+                      >
+                        <textarea
+                          class="w-100 h-100 py-3 px-4 border-0 focus-ring"
+                          name="replyText"
+                          id="replyText"
+                          placeholder="Reply an answer…"
+                        ></textarea>
+                        <div
+                          class="text-end position-absolute bottom-0 end-0 pe-4 pb-3"
+                        >
+                          <button
+                            type="button"
+                            class="btn btn-outline-success px-5 me-2"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample"
+                          >
+                            Cancel
+                          </button>
+                          <button type="button" class="btn btn-success px-5">
+                            Reply
                           </button>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex pt-3 justify-content-between align-items-center"
+                  >
+                    <div>
+                      <span class="material-symbols-outlined">
+                        chevron_left
+                      </span>
+                      <span class="material-symbols-outlined">
+                        chevron_right
+                      </span>
+                    </div>
+                    <div>
+                      <button
+                        type="button"
+                        class="btn btn-outline-success px-5"
+                      >
+                        Mark as read
+                      </button>
+                      <button
+                        class="btn btn-success px-5"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        Reply
+                      </button>
                     </div>
                   </div>
                 </div>
